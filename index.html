@@ -2,9 +2,21 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>MainCars - Wypożyczalnia samochodów sportowych</title>
+    <title>Vue js pierwsze praktyki</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
-    <?php include 'index.php';?>
+    <div id="app">
+        {{ message }}
+    </div>
 </body>
 </html>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
