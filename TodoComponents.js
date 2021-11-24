@@ -1,29 +1,50 @@
-// List of to do items (accepts an array as props)
-Vue.component("todo_list", {
-    props: ["todo_list_prop"],
-    template: `<ol>
-                 <todo_item v-for="item in todo_list_prop"
-                            v-bind:todo_item_prop="item"
-                            v-bind:key="item.id"/>
-             </ol>`,
-})
-
-// Renderer for each to do item (accepts one item as props)
-Vue.component("todo_item", {
-    props: ["todo_item_prop"],
-    template: `<li v-bind:class="{ strike: todo_item_prop.done }">
-              {{ todo_item_prop.text }}
-            </li>`,
-})
-
-// Setup the data for the to do list (and and attach to index.html)
-new Vue({
-    el: "#app_component",
+var app = new Vue({
+    el: '#app',
     data: {
-        todoList: [
-            { id: 0, text: "Brush teeth", done: true },
-            { id: 1, text: "Buy chocolate", done: false },
-            { id: 2, text: "Sell laptop", done: false },
-        ],
+        message: 'Hello Vue!'
+    }
+})
+
+var app2 = new Vue({
+    el: '#app-2',
+    data: {
+        message: 'You loaded this page on ' + new Date().toLocaleString()
+    }
+})
+
+var app3 = new Vue({
+    el: '#app-3',
+    data: {
+        seen: true
+    }
+})
+
+var app4 = new Vue({
+    el: '#app-4',
+    data: {
+        todos: [
+            { text: 'Learn JavaScript' },
+            { text: 'Learn Vue' },
+            { text: 'Build something awesome' }
+        ]
+    }
+})
+
+var app5 = new Vue({
+    el: '#app-5',
+    data: {
+        message: 'Hello Vue.js!'
     },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
+})
+
+var app6 = new Vue({
+    el: '#app-6',
+    data: {
+        message: 'Hello Vue!'
+    }
 })
