@@ -1,8 +1,10 @@
-<HTML>
-<HEAD>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
     <title>MainCars - Wypożyczalnia samochodów sportowych</title>
-</HEAD>
-<BODY>
-    <h1>Jestem tutaj</h1>
-</BODY>
-</HTML>
+</head>
+<body>
+
+</body>
+</html>
