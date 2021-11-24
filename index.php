@@ -1,4 +1,3 @@
-!DOCTYPE HTML
 <HTML>
 <HEAD>
     <title>MainCars - Wypożyczalnia samochodów sportowych</title>
